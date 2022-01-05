@@ -312,7 +312,6 @@ namespace QuickGUI
             // 
             // key_ans
             // 
-            this.key_ans.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.key_ans.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_ans.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_ans.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(128)))));
@@ -747,7 +746,7 @@ namespace QuickGUI
             this.Controls.Add(this.key_dp);
             this.Controls.Add(this.equationText);
             this.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Calc";
             this.Text = "Calc";
             this.ResumeLayout(false);
