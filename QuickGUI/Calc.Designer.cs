@@ -64,6 +64,9 @@ namespace QuickGUI
             this.key_speech = new System.Windows.Forms.Button();
             this.keepOnTop = new System.Windows.Forms.CheckBox();
             this.key_comma = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // equationText
@@ -83,6 +86,7 @@ namespace QuickGUI
             // 
             // key_dp
             // 
+            this.key_dp.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.key_dp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_dp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_dp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
@@ -104,6 +108,7 @@ namespace QuickGUI
             // 
             // key_0
             // 
+            this.key_0.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.key_0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_0.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
@@ -125,6 +130,7 @@ namespace QuickGUI
             // 
             // key_i
             // 
+            this.key_i.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.key_i.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_i.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_i.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
@@ -146,6 +152,7 @@ namespace QuickGUI
             // 
             // key_3
             // 
+            this.key_3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.key_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
@@ -167,6 +174,7 @@ namespace QuickGUI
             // 
             // key_2
             // 
+            this.key_2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.key_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
@@ -188,6 +196,7 @@ namespace QuickGUI
             // 
             // key_1
             // 
+            this.key_1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.key_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
@@ -209,6 +218,7 @@ namespace QuickGUI
             // 
             // key_5
             // 
+            this.key_5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.key_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
@@ -230,6 +240,7 @@ namespace QuickGUI
             // 
             // key_4
             // 
+            this.key_4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.key_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
@@ -251,6 +262,7 @@ namespace QuickGUI
             // 
             // key_9
             // 
+            this.key_9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.key_9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
@@ -272,6 +284,7 @@ namespace QuickGUI
             // 
             // key_8
             // 
+            this.key_8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.key_8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
@@ -293,6 +306,7 @@ namespace QuickGUI
             // 
             // key_7
             // 
+            this.key_7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.key_7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
@@ -314,9 +328,10 @@ namespace QuickGUI
             // 
             // key_ans
             // 
+            this.key_ans.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.key_ans.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_ans.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.key_ans.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(128)))));
+            this.key_ans.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
             this.key_ans.FlatAppearance.BorderSize = 3;
             this.key_ans.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.key_ans.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -324,7 +339,7 @@ namespace QuickGUI
             this.key_ans.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.key_ans.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.key_ans.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.key_ans.Location = new System.Drawing.Point(335, 425);
+            this.key_ans.Location = new System.Drawing.Point(335, 494);
             this.key_ans.Name = "key_ans";
             this.key_ans.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.key_ans.Size = new System.Drawing.Size(71, 63);
@@ -335,6 +350,7 @@ namespace QuickGUI
             // 
             // key_plus
             // 
+            this.key_plus.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.key_plus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_plus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_plus.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
@@ -356,6 +372,7 @@ namespace QuickGUI
             // 
             // key_timesalt
             // 
+            this.key_timesalt.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.key_timesalt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_timesalt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_timesalt.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
@@ -377,6 +394,7 @@ namespace QuickGUI
             // 
             // key_dividealt
             // 
+            this.key_dividealt.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.key_dividealt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_dividealt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_dividealt.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
@@ -398,6 +416,7 @@ namespace QuickGUI
             // 
             // key_minus
             // 
+            this.key_minus.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.key_minus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_minus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_minus.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
@@ -461,6 +480,7 @@ namespace QuickGUI
             // 
             // key_degrees
             // 
+            this.key_degrees.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.key_degrees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_degrees.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_degrees.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
@@ -482,6 +502,7 @@ namespace QuickGUI
             // 
             // key_power
             // 
+            this.key_power.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.key_power.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_power.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_power.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
@@ -503,6 +524,7 @@ namespace QuickGUI
             // 
             // key_factorial
             // 
+            this.key_factorial.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.key_factorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_factorial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_factorial.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
@@ -524,6 +546,7 @@ namespace QuickGUI
             // 
             // key_root
             // 
+            this.key_root.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.key_root.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_root.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_root.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
@@ -545,6 +568,7 @@ namespace QuickGUI
             // 
             // key_percent
             // 
+            this.key_percent.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.key_percent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_percent.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_percent.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
@@ -566,6 +590,7 @@ namespace QuickGUI
             // 
             // key_E
             // 
+            this.key_E.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.key_E.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_E.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_E.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
@@ -597,7 +622,7 @@ namespace QuickGUI
             this.func.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.func.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.func.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.func.Location = new System.Drawing.Point(12, 77);
+            this.func.Location = new System.Drawing.Point(12, 144);
             this.func.Name = "func";
             this.func.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.func.Size = new System.Drawing.Size(71, 63);
@@ -618,7 +643,7 @@ namespace QuickGUI
             this.var.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.var.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.var.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.var.Location = new System.Drawing.Point(12, 144);
+            this.var.Location = new System.Drawing.Point(89, 144);
             this.var.Name = "var";
             this.var.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.var.Size = new System.Drawing.Size(71, 63);
@@ -629,6 +654,7 @@ namespace QuickGUI
             // 
             // key_6
             // 
+            this.key_6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.key_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
@@ -660,7 +686,7 @@ namespace QuickGUI
             this.key_openbrack.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.key_openbrack.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.key_openbrack.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.key_openbrack.Location = new System.Drawing.Point(89, 144);
+            this.key_openbrack.Location = new System.Drawing.Point(89, 494);
             this.key_openbrack.Name = "key_openbrack";
             this.key_openbrack.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.key_openbrack.Size = new System.Drawing.Size(71, 63);
@@ -681,7 +707,7 @@ namespace QuickGUI
             this.key_closebrack.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.key_closebrack.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.key_closebrack.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.key_closebrack.Location = new System.Drawing.Point(166, 144);
+            this.key_closebrack.Location = new System.Drawing.Point(166, 494);
             this.key_closebrack.Name = "key_closebrack";
             this.key_closebrack.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.key_closebrack.Size = new System.Drawing.Size(71, 63);
@@ -692,6 +718,7 @@ namespace QuickGUI
             // 
             // key_speech
             // 
+            this.key_speech.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.key_speech.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_speech.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_speech.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -702,7 +729,7 @@ namespace QuickGUI
             this.key_speech.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.key_speech.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.key_speech.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.key_speech.Location = new System.Drawing.Point(258, 425);
+            this.key_speech.Location = new System.Drawing.Point(12, 494);
             this.key_speech.Name = "key_speech";
             this.key_speech.Size = new System.Drawing.Size(71, 63);
             this.key_speech.TabIndex = 26;
@@ -735,13 +762,76 @@ namespace QuickGUI
             this.key_comma.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.key_comma.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.key_comma.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.key_comma.Location = new System.Drawing.Point(333, 494);
+            this.key_comma.Location = new System.Drawing.Point(258, 494);
             this.key_comma.Name = "key_comma";
             this.key_comma.Size = new System.Drawing.Size(71, 63);
             this.key_comma.TabIndex = 26;
             this.key_comma.Text = ",";
             this.key_comma.UseVisualStyleBackColor = false;
             this.key_comma.Click += new System.EventHandler(this.CalcKeyPress);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button4.FlatAppearance.BorderSize = 3;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button4.Location = new System.Drawing.Point(258, 425);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(71, 63);
+            this.button4.TabIndex = 26;
+            this.button4.Text = ">";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.CalcKeyPress);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.button1.BackgroundImage = global::QuickGUI.Properties.Resources.Settings;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
+            this.button1.FlatAppearance.BorderSize = 3;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(12, 75);
+            this.button1.Name = "button1";
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button1.Size = new System.Drawing.Size(71, 63);
+            this.button1.TabIndex = 20;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.CalcKeyPress);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
+            this.button2.FlatAppearance.BorderSize = 3;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.Location = new System.Drawing.Point(166, 149);
+            this.button2.Name = "button2";
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button2.Size = new System.Drawing.Size(71, 63);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "=";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.CalcKeyPress);
             // 
             // Calc
             // 
@@ -750,6 +840,7 @@ namespace QuickGUI
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(416, 565);
             this.Controls.Add(this.keepOnTop);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.key_comma);
             this.Controls.Add(this.key_speech);
             this.Controls.Add(this.var);
@@ -757,6 +848,7 @@ namespace QuickGUI
             this.Controls.Add(this.key_E);
             this.Controls.Add(this.key_percent);
             this.Controls.Add(this.key_clear);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.key_backspace);
             this.Controls.Add(this.key_root);
             this.Controls.Add(this.key_dividealt);
@@ -766,6 +858,7 @@ namespace QuickGUI
             this.Controls.Add(this.key_timesalt);
             this.Controls.Add(this.key_degrees);
             this.Controls.Add(this.key_plus);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.key_ans);
             this.Controls.Add(this.key_closebrack);
             this.Controls.Add(this.key_openbrack);
@@ -825,6 +918,9 @@ namespace QuickGUI
         private System.Windows.Forms.Button key_speech;
         private System.Windows.Forms.CheckBox keepOnTop;
         private System.Windows.Forms.Button key_comma;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
