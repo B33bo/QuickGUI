@@ -1,15 +1,7 @@
-﻿using System;
+﻿using QuickMaffs;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Drawing.Text;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuickMaffs;
 
 namespace QuickGUI
 {
@@ -37,6 +29,7 @@ namespace QuickGUI
             { "openbrack", "(" },
             { "closebrack", ")" },
             { "speech", "\"" },
+            { "comma", "," },
         };
 
         public Calc()
@@ -115,6 +108,13 @@ namespace QuickGUI
 
             if (senderAsControl.Name == "var")
                 new AddVariable().Show();
+            else if (senderAsControl.Name == "func")
+                new AddFunction().Show();
+        }
+
+        private void KeepOnTopToggle(object sender, EventArgs e)
+        {
+            TopMost = keepOnTop.Checked;
         }
     }
 }

@@ -81,6 +81,33 @@ namespace QuickGUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Digits::
+        ///	0,1,2,3,4,5,6,7,8,9
+        ///
+        ///Operators::
+        ///	+ - Addition (a+b)
+        ///	- - Subtraction (a-b)
+        ///	*/× - Multiplication (a*b)
+        ///	//÷ - Division (a/b)
+        ///	^ - Power (aᵇ)
+        ///	√ - Root (ath root of b)
+        ///	! - Factorial (let a=5. a! = 1*2*3*4*5)
+        ///	= - Equals (if a = b: 1, else: -1)
+        ///	≠ - Not Equal To (if a = b: -1, else: 1)
+        ///	&gt; - Greater than (if a &gt; b: 1, else: -1)
+        ///	&lt; - Greater than (if a &lt; b: 1, else: -1)
+        ///	% - Convert to percentage (a/100)
+        ///	E - E-notation (a * 10^E)
+        ///	( - Opening bracket (a*(b+b) -&gt; a*2b)
+        ///	) - Closing [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string HelpPage {
+            get {
+                return ResourceManager.GetString("HelpPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Plus {

@@ -62,6 +62,8 @@ namespace QuickGUI
             this.key_openbrack = new System.Windows.Forms.Button();
             this.key_closebrack = new System.Windows.Forms.Button();
             this.key_speech = new System.Windows.Forms.Button();
+            this.keepOnTop = new System.Windows.Forms.CheckBox();
+            this.key_comma = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // equationText
@@ -708,12 +710,47 @@ namespace QuickGUI
             this.key_speech.UseVisualStyleBackColor = false;
             this.key_speech.Click += new System.EventHandler(this.CalcKeyPress);
             // 
+            // keepOnTop
+            // 
+            this.keepOnTop.AutoSize = true;
+            this.keepOnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
+            this.keepOnTop.ForeColor = System.Drawing.Color.Goldenrod;
+            this.keepOnTop.Location = new System.Drawing.Point(311, 47);
+            this.keepOnTop.Name = "keepOnTop";
+            this.keepOnTop.Size = new System.Drawing.Size(93, 19);
+            this.keepOnTop.TabIndex = 27;
+            this.keepOnTop.Text = "Keep On Top";
+            this.keepOnTop.UseVisualStyleBackColor = false;
+            this.keepOnTop.CheckedChanged += new System.EventHandler(this.KeepOnTopToggle);
+            // 
+            // key_comma
+            // 
+            this.key_comma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.key_comma.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.key_comma.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.key_comma.FlatAppearance.BorderSize = 3;
+            this.key_comma.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.key_comma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.key_comma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.key_comma.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.key_comma.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.key_comma.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.key_comma.Location = new System.Drawing.Point(333, 494);
+            this.key_comma.Name = "key_comma";
+            this.key_comma.Size = new System.Drawing.Size(71, 63);
+            this.key_comma.TabIndex = 26;
+            this.key_comma.Text = ",";
+            this.key_comma.UseVisualStyleBackColor = false;
+            this.key_comma.Click += new System.EventHandler(this.CalcKeyPress);
+            // 
             // Calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(416, 500);
+            this.ClientSize = new System.Drawing.Size(416, 565);
+            this.Controls.Add(this.keepOnTop);
+            this.Controls.Add(this.key_comma);
             this.Controls.Add(this.key_speech);
             this.Controls.Add(this.var);
             this.Controls.Add(this.func);
@@ -786,6 +823,8 @@ namespace QuickGUI
         private System.Windows.Forms.Button key_openbrack;
         private System.Windows.Forms.Button key_closebrack;
         private System.Windows.Forms.Button key_speech;
+        private System.Windows.Forms.CheckBox keepOnTop;
+        private System.Windows.Forms.Button key_comma;
     }
 }
 
