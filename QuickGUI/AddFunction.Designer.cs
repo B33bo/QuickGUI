@@ -84,6 +84,7 @@ namespace QuickGUI
             this.button3.Size = new System.Drawing.Size(23, 23);
             this.button3.TabIndex = 6;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.AddFunc);
             // 
             // button2
             // 

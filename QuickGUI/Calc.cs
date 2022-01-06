@@ -110,6 +110,8 @@ namespace QuickGUI
                 new AddVariable().Show();
             else if (senderAsControl.Name == "func")
                 new AddFunction().Show();
+            else if (senderAsControl.Name == "things")
+                new ThingsWindow().Show();
         }
 
         private void KeepOnTopToggle(object sender, EventArgs e)

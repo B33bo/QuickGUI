@@ -76,5 +76,10 @@ namespace QuickGUI
             Calc.instance.AddKeyFromName($"key_{targetFunction}(");
             Close();
         }
+
+        private void AddFunc(object sender, EventArgs e)
+        {
+            string Equation = PromptManager.Show("Enter an equation. 1st arg = 'a', 2nd = 'b' etc", "Custom method");
+        }
     }
 }

@@ -15,7 +15,6 @@ namespace QuickGUI
     {
         public static List<char> variables = new();
         public static AddVariable instance;
-        public static bool IsAdd;
 
         public static char CurrentSelected
         {
@@ -37,7 +36,7 @@ namespace QuickGUI
 
             for (int i = 0; i < variables.Count; i++)
             {
-                VariableContainer.Items.Add($"{variables[i]} = {Variables.variables[variables[i]].ToMathematicalString()}");
+                VariableContainer.Items.Add($"{variables[i]} = {Variables.variables[variables[i]]}");
             }
         }
 
@@ -56,11 +55,33 @@ namespace QuickGUI
 
         private void EditVar(object sender, EventArgs e)
         {
-            if (VariableContainer.SelectedIndex < 0)
+            string editString = "x=y";
+
+            if (VariableContainer.SelectedIndex > 0)
+                editString = $"{CurrentSelected}={Variables.variables[CurrentSelected]}";
+
+            string newString = PromptManager.Show("Edit a variable", editString);
+
+            if (newString == "")
                 return;
 
-            IsAdd = false;
-            new EditVariable().Show();
+            string newValue = "";
+            try
+            {
+                newValue = new Equation(newString[2..]).Solve();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show($"'{newString[2..]}' is not an equation!", "Error",
+    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            if (Variables.variables.ContainsKey(newString[0]))
+                Variables.variables[newString[0]] = newValue;
+            else
+                Variables.variables.Add(newString[0], newValue);
+
+            RefreshVars();
         }
 
         private void RemoveVar(object sender, EventArgs e)
@@ -69,12 +90,6 @@ namespace QuickGUI
                 return;
             Variables.variables.Remove(variables[VariableContainer.SelectedIndex]);
             RefreshVars();
-        }
-
-        private void AddVar(object sender, EventArgs e)
-        {
-            IsAdd = true;
-            new EditVariable().Show();
         }
     }
 }

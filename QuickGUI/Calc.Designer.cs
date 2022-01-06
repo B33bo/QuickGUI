@@ -65,8 +65,7 @@ namespace QuickGUI
             this.keepOnTop = new System.Windows.Forms.CheckBox();
             this.key_comma = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.things = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // equationText
@@ -790,48 +789,27 @@ namespace QuickGUI
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.CalcKeyPress);
             // 
-            // button1
+            // things
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.button1.BackgroundImage = global::QuickGUI.Properties.Resources.Settings;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(12, 75);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(71, 63);
-            this.button1.TabIndex = 20;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.CalcKeyPress);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.Location = new System.Drawing.Point(166, 149);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button2.Size = new System.Drawing.Size(71, 63);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "=";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.CalcKeyPress);
+            this.things.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.things.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.things.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.things.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
+            this.things.FlatAppearance.BorderSize = 3;
+            this.things.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.things.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.things.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.things.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.things.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.things.Location = new System.Drawing.Point(12, 75);
+            this.things.Name = "things";
+            this.things.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.things.Size = new System.Drawing.Size(71, 63);
+            this.things.TabIndex = 20;
+            this.things.Text = "...";
+            this.things.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.things.UseVisualStyleBackColor = false;
+            this.things.Click += new System.EventHandler(this.OpenWindow);
             // 
             // Calc
             // 
@@ -848,7 +826,7 @@ namespace QuickGUI
             this.Controls.Add(this.key_E);
             this.Controls.Add(this.key_percent);
             this.Controls.Add(this.key_clear);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.things);
             this.Controls.Add(this.key_backspace);
             this.Controls.Add(this.key_root);
             this.Controls.Add(this.key_dividealt);
@@ -858,7 +836,6 @@ namespace QuickGUI
             this.Controls.Add(this.key_timesalt);
             this.Controls.Add(this.key_degrees);
             this.Controls.Add(this.key_plus);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.key_ans);
             this.Controls.Add(this.key_closebrack);
             this.Controls.Add(this.key_openbrack);
@@ -919,8 +896,7 @@ namespace QuickGUI
         private System.Windows.Forms.CheckBox keepOnTop;
         private System.Windows.Forms.Button key_comma;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button things;
     }
 }
 
