@@ -64,8 +64,7 @@ namespace QuickGUI
             this.key_speech = new System.Windows.Forms.Button();
             this.keepOnTop = new System.Windows.Forms.CheckBox();
             this.key_comma = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.things = new System.Windows.Forms.Button();
+            this.bools = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // equationText
@@ -80,7 +79,6 @@ namespace QuickGUI
             this.equationText.Name = "equationText";
             this.equationText.Size = new System.Drawing.Size(392, 54);
             this.equationText.TabIndex = 2;
-            this.equationText.Text = "1+1";
             this.equationText.TextChanged += new System.EventHandler(this.UpdateEquationString);
             // 
             // key_dp
@@ -447,7 +445,7 @@ namespace QuickGUI
             this.key_backspace.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.key_backspace.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.key_backspace.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.key_backspace.Location = new System.Drawing.Point(89, 75);
+            this.key_backspace.Location = new System.Drawing.Point(12, 75);
             this.key_backspace.Name = "key_backspace";
             this.key_backspace.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.key_backspace.Size = new System.Drawing.Size(71, 63);
@@ -468,7 +466,7 @@ namespace QuickGUI
             this.key_clear.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.key_clear.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.key_clear.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.key_clear.Location = new System.Drawing.Point(166, 75);
+            this.key_clear.Location = new System.Drawing.Point(89, 75);
             this.key_clear.Name = "key_clear";
             this.key_clear.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.key_clear.Size = new System.Drawing.Size(71, 63);
@@ -769,47 +767,25 @@ namespace QuickGUI
             this.key_comma.UseVisualStyleBackColor = false;
             this.key_comma.Click += new System.EventHandler(this.CalcKeyPress);
             // 
-            // button4
+            // bools
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button4.FlatAppearance.BorderSize = 3;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.Location = new System.Drawing.Point(258, 425);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(71, 63);
-            this.button4.TabIndex = 26;
-            this.button4.Text = ">";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.CalcKeyPress);
-            // 
-            // things
-            // 
-            this.things.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.things.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.things.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.things.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
-            this.things.FlatAppearance.BorderSize = 3;
-            this.things.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.things.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.things.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.things.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.things.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.things.Location = new System.Drawing.Point(12, 75);
-            this.things.Name = "things";
-            this.things.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.things.Size = new System.Drawing.Size(71, 63);
-            this.things.TabIndex = 20;
-            this.things.Text = "...";
-            this.things.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.things.UseVisualStyleBackColor = false;
-            this.things.Click += new System.EventHandler(this.OpenWindow);
+            this.bools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.bools.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bools.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.bools.FlatAppearance.BorderSize = 3;
+            this.bools.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.bools.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.bools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bools.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.bools.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.bools.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bools.Location = new System.Drawing.Point(258, 425);
+            this.bools.Name = "bools";
+            this.bools.Size = new System.Drawing.Size(71, 63);
+            this.bools.TabIndex = 26;
+            this.bools.Text = "bool";
+            this.bools.UseVisualStyleBackColor = false;
+            this.bools.Click += new System.EventHandler(this.OpenWindow);
             // 
             // Calc
             // 
@@ -818,7 +794,7 @@ namespace QuickGUI
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(416, 565);
             this.Controls.Add(this.keepOnTop);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.bools);
             this.Controls.Add(this.key_comma);
             this.Controls.Add(this.key_speech);
             this.Controls.Add(this.var);
@@ -826,7 +802,6 @@ namespace QuickGUI
             this.Controls.Add(this.key_E);
             this.Controls.Add(this.key_percent);
             this.Controls.Add(this.key_clear);
-            this.Controls.Add(this.things);
             this.Controls.Add(this.key_backspace);
             this.Controls.Add(this.key_root);
             this.Controls.Add(this.key_dividealt);
@@ -895,8 +870,7 @@ namespace QuickGUI
         private System.Windows.Forms.Button key_speech;
         private System.Windows.Forms.CheckBox keepOnTop;
         private System.Windows.Forms.Button key_comma;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button things;
+        private System.Windows.Forms.Button bools;
     }
 }
 

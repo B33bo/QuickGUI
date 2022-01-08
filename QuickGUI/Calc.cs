@@ -79,11 +79,16 @@ namespace QuickGUI
                 case "key_ans":
                     WasAnswered = true;
 
-                    try { equationText.Text += "=" + new Equation(EquationString).Solve(); }
+                    try { equationText.Text = EquationString + "=" + new Equation(EquationString).Solve(); }
                     catch (Exception) { equationText.Text += "=" + "Error"; }
 
                     WasAnswered = false;
                     return;
+                case "key_root":
+                    if (EquationString == "")
+                        EquationString += "2";
+                    EquationString += "√";
+                    break;
                 case "key_backspace":
                     if (EquationString.Length == 0)
                         break;
@@ -110,8 +115,8 @@ namespace QuickGUI
                 new AddVariable().Show();
             else if (senderAsControl.Name == "func")
                 new AddFunction().Show();
-            else if (senderAsControl.Name == "things")
-                new ThingsWindow().Show();
+            else if (senderAsControl.Name == "bools")
+                new BooleanOpers().Show();
         }
 
         private void KeepOnTopToggle(object sender, EventArgs e)
