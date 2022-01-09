@@ -36,11 +36,7 @@ namespace QuickGUI
 
                 if (isInFile)
                 {
-                    if (file[i] == "Conversions::")
-                        break;
-                    else if (file[i].StartsWith("rand(a,b)"))
-                        Functions.Add(("", "non-trigonometry functions"));
-                    else if (file[i][0] == '*')
+                    if (file[i][0] == '*')
                         continue;
 
                     string[] items = file[i].Split(')');

@@ -65,6 +65,7 @@ namespace QuickGUI
             this.keepOnTop = new System.Windows.Forms.CheckBox();
             this.key_comma = new System.Windows.Forms.Button();
             this.bools = new System.Windows.Forms.Button();
+            this.trig = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // equationText
@@ -325,7 +326,7 @@ namespace QuickGUI
             // 
             // key_ans
             // 
-            this.key_ans.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.key_ans.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.key_ans.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_ans.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_ans.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
@@ -673,6 +674,7 @@ namespace QuickGUI
             // 
             // key_openbrack
             // 
+            this.key_openbrack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.key_openbrack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_openbrack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_openbrack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -694,6 +696,7 @@ namespace QuickGUI
             // 
             // key_closebrack
             // 
+            this.key_closebrack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.key_closebrack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_closebrack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_closebrack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -715,7 +718,7 @@ namespace QuickGUI
             // 
             // key_speech
             // 
-            this.key_speech.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.key_speech.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.key_speech.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_speech.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_speech.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -736,10 +739,11 @@ namespace QuickGUI
             // 
             // keepOnTop
             // 
+            this.keepOnTop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.keepOnTop.AutoSize = true;
             this.keepOnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
             this.keepOnTop.ForeColor = System.Drawing.Color.Goldenrod;
-            this.keepOnTop.Location = new System.Drawing.Point(311, 47);
+            this.keepOnTop.Location = new System.Drawing.Point(311, 12);
             this.keepOnTop.Name = "keepOnTop";
             this.keepOnTop.Size = new System.Drawing.Size(93, 19);
             this.keepOnTop.TabIndex = 27;
@@ -749,6 +753,7 @@ namespace QuickGUI
             // 
             // key_comma
             // 
+            this.key_comma.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.key_comma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.key_comma.Cursor = System.Windows.Forms.Cursors.Hand;
             this.key_comma.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -769,6 +774,7 @@ namespace QuickGUI
             // 
             // bools
             // 
+            this.bools.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.bools.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bools.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
@@ -787,6 +793,27 @@ namespace QuickGUI
             this.bools.UseVisualStyleBackColor = false;
             this.bools.Click += new System.EventHandler(this.OpenWindow);
             // 
+            // trig
+            // 
+            this.trig.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.trig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.trig.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.trig.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.trig.FlatAppearance.BorderSize = 3;
+            this.trig.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.trig.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.trig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.trig.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.trig.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.trig.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.trig.Location = new System.Drawing.Point(333, 425);
+            this.trig.Name = "trig";
+            this.trig.Size = new System.Drawing.Size(71, 63);
+            this.trig.TabIndex = 26;
+            this.trig.Text = "trig";
+            this.trig.UseVisualStyleBackColor = false;
+            this.trig.Click += new System.EventHandler(this.OpenWindow);
+            // 
             // Calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -794,6 +821,7 @@ namespace QuickGUI
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(416, 565);
             this.Controls.Add(this.keepOnTop);
+            this.Controls.Add(this.trig);
             this.Controls.Add(this.bools);
             this.Controls.Add(this.key_comma);
             this.Controls.Add(this.key_speech);
@@ -871,6 +899,7 @@ namespace QuickGUI
         private System.Windows.Forms.CheckBox keepOnTop;
         private System.Windows.Forms.Button key_comma;
         private System.Windows.Forms.Button bools;
+        private System.Windows.Forms.Button trig;
     }
 }
 

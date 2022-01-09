@@ -22,7 +22,7 @@ namespace QuickGUI.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace QuickGUI.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("QuickGUI.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace QuickGUI.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace QuickGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Close {
+        public static System.Drawing.Bitmap Close {
             get {
                 object obj = ResourceManager.GetObject("Close", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace QuickGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Doodler {
+        public static System.Drawing.Bitmap Doodler {
             get {
                 object obj = ResourceManager.GetObject("Doodler", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -81,27 +81,26 @@ namespace QuickGUI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Digits::
-        ///	0,1,2,3,4,5,6,7,8,9
-        ///
-        ///Operators::
-        ///	+ - Addition (a+b)
-        ///	- - Subtraction (a-b)
-        ///	*/× - Multiplication (a*b)
-        ///	//÷ - Division (a/b)
-        ///	^ - Power (aᵇ)
-        ///	√ - Root (ath root of b)
-        ///	! - Factorial (let a=5. a! = 1*2*3*4*5)
-        ///	= - Equals (if a = b: 1, else: -1)
-        ///	≠ - Not Equal To (if a = b: -1, else: 1)
-        ///	&gt; - Greater than (if a &gt; b: 1, else: -1)
-        ///	&lt; - Greater than (if a &lt; b: 1, else: -1)
-        ///	% - Convert to percentage (a/100)
-        ///	E - E-notation (a * 10^E)
-        ///	( - Opening bracket (a*(b+b) -&gt; a*2b)
-        ///	) - Closing [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Operators::
+        ///+-Addition (a+b)
+        ///--Subtraction (a-b)
+        ///*/×-Multiplication (a*b)
+        /////÷-Division (a/b)
+        ///^-Power (aᵇ)
+        ///√-Root (ath root of b)
+        ///!-Factorial (let a=5. a! = 1*2*3*4*5)
+        ///=-Equals (if a = b: 1, else: -1)
+        ///≠-Not Equal To (if a = b: -1, else: 1)
+        ///&gt;-Greater than (if a &gt; b: 1, else: -1)
+        ///&lt;-Greater than (if a &lt; b: 1, else: -1)
+        ///≈-Approximatly equal to
+        ///%-Convert to percentage (a/100)
+        ///E-E-notation (a * 10^E)
+        ///(-Opening bracket (a*(b+b) -&gt; a*2b)
+        ///)-Closing bracket (a*(b+b) -&gt; a*2b)
+        ///°-Degrees (converts the in [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string HelpPage {
+        public static string HelpPage {
             get {
                 return ResourceManager.GetString("HelpPage", resourceCulture);
             }
@@ -110,7 +109,7 @@ namespace QuickGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Plus {
+        public static System.Drawing.Bitmap Plus {
             get {
                 object obj = ResourceManager.GetObject("Plus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -120,7 +119,7 @@ namespace QuickGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Settings {
+        public static System.Drawing.Bitmap Settings {
             get {
                 object obj = ResourceManager.GetObject("Settings", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -130,7 +129,7 @@ namespace QuickGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TriangleRuler {
+        public static System.Drawing.Bitmap TriangleRuler {
             get {
                 object obj = ResourceManager.GetObject("TriangleRuler", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

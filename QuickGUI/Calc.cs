@@ -111,12 +111,23 @@ namespace QuickGUI
         {
             Control senderAsControl = sender as Control;
 
-            if (senderAsControl.Name == "var")
+            switch (senderAsControl.Name)
+            {
+                default:
+                    break;
+                case "var":
                 new AddVariable().Show();
-            else if (senderAsControl.Name == "func")
-                new AddFunction().Show();
-            else if (senderAsControl.Name == "bools")
-                new BooleanOpers().Show();
+                    break;
+                case "func":
+                    new AddFunction().Show();
+                    break;
+                case "bools":
+                    new BooleanOpers().Show();
+                    break;
+                case "trig":
+                    new Trig().Show();
+                    break;
+            }
         }
 
         private void KeepOnTopToggle(object sender, EventArgs e)
