@@ -50,7 +50,7 @@ namespace QuickGUI
             this.key_minus = new System.Windows.Forms.Button();
             this.key_backspace = new System.Windows.Forms.Button();
             this.key_clear = new System.Windows.Forms.Button();
-            this.key_degrees = new System.Windows.Forms.Button();
+            this.convert = new System.Windows.Forms.Button();
             this.key_power = new System.Windows.Forms.Button();
             this.key_factorial = new System.Windows.Forms.Button();
             this.key_root = new System.Windows.Forms.Button();
@@ -476,27 +476,27 @@ namespace QuickGUI
             this.key_clear.UseVisualStyleBackColor = false;
             this.key_clear.Click += new System.EventHandler(this.CalcKeyPress);
             // 
-            // key_degrees
+            // convert
             // 
-            this.key_degrees.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.key_degrees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.key_degrees.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.key_degrees.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.key_degrees.FlatAppearance.BorderSize = 3;
-            this.key_degrees.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.key_degrees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.key_degrees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.key_degrees.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.key_degrees.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.key_degrees.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.key_degrees.Location = new System.Drawing.Point(335, 356);
-            this.key_degrees.Name = "key_degrees";
-            this.key_degrees.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.key_degrees.Size = new System.Drawing.Size(71, 63);
-            this.key_degrees.TabIndex = 16;
-            this.key_degrees.Text = "°";
-            this.key_degrees.UseVisualStyleBackColor = false;
-            this.key_degrees.Click += new System.EventHandler(this.CalcKeyPress);
+            this.convert.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.convert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.convert.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.convert.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.convert.FlatAppearance.BorderSize = 3;
+            this.convert.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.convert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.convert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.convert.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.convert.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.convert.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.convert.Location = new System.Drawing.Point(335, 356);
+            this.convert.Name = "convert";
+            this.convert.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.convert.Size = new System.Drawing.Size(71, 63);
+            this.convert.TabIndex = 16;
+            this.convert.Text = "a->b";
+            this.convert.UseVisualStyleBackColor = false;
+            this.convert.Click += new System.EventHandler(this.OpenWindow);
             // 
             // key_power
             // 
@@ -837,7 +837,7 @@ namespace QuickGUI
             this.Controls.Add(this.key_minus);
             this.Controls.Add(this.key_power);
             this.Controls.Add(this.key_timesalt);
-            this.Controls.Add(this.key_degrees);
+            this.Controls.Add(this.convert);
             this.Controls.Add(this.key_plus);
             this.Controls.Add(this.key_ans);
             this.Controls.Add(this.key_closebrack);
@@ -884,7 +884,7 @@ namespace QuickGUI
         private System.Windows.Forms.Button key_minus;
         private System.Windows.Forms.Button key_backspace;
         private System.Windows.Forms.Button key_clear;
-        private System.Windows.Forms.Button key_degrees;
+        private System.Windows.Forms.Button convert;
         private System.Windows.Forms.Button key_power;
         private System.Windows.Forms.Button key_factorial;
         private System.Windows.Forms.Button key_root;

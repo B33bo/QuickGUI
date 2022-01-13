@@ -51,7 +51,7 @@ namespace QuickGUI
             for (int i = 0; i < equations.Count; i++)
             {
                 string funcName = equations[i].Split('=')[0];
-                string funcData = equations[i].Split('=')[1..].Readable("=");
+                string funcData = equations[i].Split('=')[1..].ToReadable("=");
                 Functions.Add((funcName, funcData));
             }
 
@@ -89,7 +89,7 @@ namespace QuickGUI
             //Format: f(x,y,z?302)=x+y+z
 
             string functionData = userInputSplitEquals[0];
-            string equation = userInputSplitEquals[1..].Readable("=");
+            string equation = userInputSplitEquals[1..].ToReadable("=");
             string functionName = functionData.Split('(')[0];
 
             if (Function.functions.ContainsKey(functionName))
@@ -113,7 +113,7 @@ namespace QuickGUI
             {
                 string[] functionSplitEquals = functionData.Split('=');
 
-                string functionCode = functionSplitEquals[1..].Readable("=")[..^1];
+                string functionCode = functionSplitEquals[1..].ToReadable("=");
 
                 eq = new(functionCode);
                 functionData = functionSplitEquals[0];

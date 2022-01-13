@@ -127,6 +127,9 @@ namespace QuickGUI
                 case "trig":
                     new Trig().Show();
                     break;
+                case "convert":
+                    new Conversions().Show();
+                    break;
             }
         }
 

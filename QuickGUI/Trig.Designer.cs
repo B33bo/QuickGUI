@@ -47,6 +47,7 @@ namespace QuickGUI
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
+            this.key_degrees = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // andkey
@@ -427,12 +428,35 @@ namespace QuickGUI
             this.button15.UseVisualStyleBackColor = false;
             this.button15.Click += new System.EventHandler(this.ClickFunc);
             // 
+            // key_degrees
+            // 
+            this.key_degrees.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.key_degrees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.key_degrees.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.key_degrees.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.key_degrees.FlatAppearance.BorderSize = 3;
+            this.key_degrees.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.key_degrees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.key_degrees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.key_degrees.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.key_degrees.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.key_degrees.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.key_degrees.Location = new System.Drawing.Point(216, 219);
+            this.key_degrees.Name = "key_degrees";
+            this.key_degrees.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.key_degrees.Size = new System.Drawing.Size(71, 63);
+            this.key_degrees.TabIndex = 31;
+            this.key_degrees.Text = "°";
+            this.key_degrees.UseVisualStyleBackColor = false;
+            this.key_degrees.Click += new System.EventHandler(this.ClickFunc);
+            // 
             // Trig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(505, 218);
+            this.ClientSize = new System.Drawing.Size(505, 291);
+            this.Controls.Add(this.key_degrees);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button14);
@@ -478,5 +502,6 @@ namespace QuickGUI
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button key_degrees;
     }
 }

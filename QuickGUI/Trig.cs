@@ -23,5 +23,12 @@ namespace QuickGUI
             Calc.instance.AddKeyFromName("key_" + SenderAsConrol.Text + "(");
             Close();
         }
+
+        private void SymbolClick(object sender, EventArgs e)
+        {
+            var SenderAsConrol = sender as Control;
+            Calc.instance.AddKeyFromName("key_" + SenderAsConrol.Text);
+            Close();
+        }
     }
 }
